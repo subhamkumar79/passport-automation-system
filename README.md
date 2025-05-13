@@ -35,7 +35,7 @@ This project demonstrates how software tools like **ArgoUML** can be used for mo
 
 This diagram outlines the interaction between different actors (Applicant, Police, Passport Administrator, and Regional Administrator) and the system.
 
-![Use Case Diagram]
+![Use Case Diagram](images/Screenshot_2025-05-13_195846.png)
 
 ---
 
@@ -43,7 +43,7 @@ This diagram outlines the interaction between different actors (Applicant, Polic
 
 This diagram shows the main classes, their attributes, and methods, including relationships between the `Applicant`, `Police`, `PassportAdministrator`, `RegionalAdministrator`, and the `Database`.
 
-![Class Diagram]
+![Class Diagram](images/Screenshot_2025-05-13_200002.png)
 
 ---
 
@@ -51,7 +51,6 @@ This diagram shows the main classes, their attributes, and methods, including re
 
 Below is a screenshot of the application interface, showing login, detail submission, status check, and confirmation.
 
-![User Interface]
+![User Interface](images/Screenshot_2025-05-13_195936.png)
 
 ---
-
