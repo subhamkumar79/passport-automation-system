@@ -1,67 +1,57 @@
-# 🛂 Passport Automation System
+# Passport Automation System
 
-A UML-based academic project that models the complete workflow of applying, verifying, and issuing a passport using **ArgoUML**. This system reduces manual effort, provides a structured process, and ensures secure data handling through multi-stage verification.
+## 📝 Introduction
 
----
+The **Passport Automation System** is a software tool developed to streamline the process of applying for a passport. The system eliminates the traditional paper-based workflow and replaces it with a centralized, digital process that involves applicants, passport administrators, regional administrators, and police authorities.
 
-## 📖 Introduction
-
-The **Passport Automation System** is designed to simplify and automate the process of applying for a passport. The system allows an applicant to register online and submit personal details. These details are verified by different authorities—namely the Passport Administrator, Regional Administrator, and Police—before the passport is approved and issued.
-
-This project focuses on modeling the structure and flow of the system using **UML diagrams** created in **ArgoUML**.
+This project demonstrates how software tools like **ArgoUML** can be used for modeling real-world systems using **UML diagrams**.
 
 ---
 
-## ⚙️ How It Works
+## ⚙️ Tools Used
 
-The project consists of multiple interacting components that represent real-world entities involved in passport issuance:
-
-1. **Applicant** logs in and submits personal details.
-2. **System** stores the data and initiates the first round of verification.
-3. **Passport Administrator** verifies and forwards details.
-4. **Police** performs background verification and sends a report.
-5. **Regional Administrator** does the final validation.
-6. If all validations pass, the passport is approved and issued.
+- **ArgoUML** – For designing UML diagrams (Use Case, Class, Sequence, Activity, etc.)
+- **Java (Swing GUI)** – For implementing the user interface
+- **MySQL/Flat-file Database** – For storing user data and verification information
+- **Java IDE (like NetBeans or Eclipse)** – For development
+- **Paint/Online tools** – For UML diagram visualization if required
 
 ---
 
-## 🛠 Tools & Technologies Used
+## 🚀 How It Works
 
-| Tool/Technology | Purpose                     |
-|------------------|------------------------------|
-| ArgoUML          | UML diagram design           |
-| Java/XML (optional) | Implementation simulation    |
-| GitHub           | Version control & documentation |
-| VS Code / Markdown | README editing                |
-
----
-
-## 🧩 UML Diagrams
-
-### 1. Use Case Diagram
-
-Shows the interaction between actors and system processes.
-
-![Use Case Diagram](diagrams/use-case.png)
-
-### 2. Class Diagram
-
-Displays the structure of classes like Applicant, Admin, Police, etc., along with their attributes and operations.
-
-![Class Diagram](diagrams/class-diagram.png)
-
-> You can add more diagrams like Sequence, Activity, or Statechart in the `diagrams/` folder.
+1. **User Login:** The applicant logs into the system using a username and password.
+2. **Application Submission:** The user enters and submits their personal details via the form.
+3. **Verification:** The passport administrator and police verify the submitted information.
+4. **Regional Admin Review:** After successful verification, the regional administrator approves the request.
+5. **Passport Issuance:** Once approved, the system generates the passport and notifies the user.
+6. **Status Check:** Applicants can check the status of their application anytime via the system.
 
 ---
 
-## 📤 Final Output (Result)
+## 📊 UML Diagrams
 
-- 📌 Applicant successfully submits application online.
-- 📌 All entities (Admin, Police, Regional Office) verify and update application status.
-- ✅ Once verified, the passport is issued and the applicant is notified.
-- 📁 All application and verification data is securely stored in the system database.
+### ✅ Use Case Diagram
+
+This diagram outlines the interaction between different actors (Applicant, Police, Passport Administrator, and Regional Administrator) and the system.
+
+![Use Case Diagram](./path/to/your/use_case_diagram.png)
 
 ---
 
-## 📁 Project Structure
+### ✅ Class Diagram
+
+This diagram shows the main classes, their attributes, and methods, including relationships between the `Applicant`, `Police`, `PassportAdministrator`, `RegionalAdministrator`, and the `Database`.
+
+![Class Diagram](./path/to/your/class_diagram.png)
+
+---
+
+## 🧑‍💻 User Interface (UI)
+
+Below is a screenshot of the application interface, showing login, detail submission, status check, and confirmation.
+
+![User Interface](./path/to/your/user_interface.png)
+
+---
 
