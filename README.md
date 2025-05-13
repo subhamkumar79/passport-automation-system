@@ -1,91 +1,67 @@
-# Passport Automation System
+# 🛂 Passport Automation System
 
-## 📌 Project Overview
-
-The **Passport Automation System** is designed to streamline and automate the passport application and verification process. It eliminates manual work, reduces processing time, and ensures secure and structured workflow through multiple verification layers involving the applicant, passport office, regional administrators, and police department.
-
-This project is modeled using **ArgoUML**, employing standard UML diagrams such as Use Case, Class, Sequence, Activity, Statechart, and Package diagrams.
+A UML-based academic project that models the complete workflow of applying, verifying, and issuing a passport using **ArgoUML**. This system reduces manual effort, provides a structured process, and ensures secure data handling through multi-stage verification.
 
 ---
 
-## 🎯 Aim
+## 📖 Introduction
 
-To design and model a Passport Automation System using the **ArgoUML** tool, focusing on minimizing manual effort, improving verification accuracy, and accelerating passport issuance.
+The **Passport Automation System** is designed to simplify and automate the process of applying for a passport. The system allows an applicant to register online and submit personal details. These details are verified by different authorities—namely the Passport Administrator, Regional Administrator, and Police—before the passport is approved and issued.
 
----
-
-## 🧩 Problem Statement
-
-1. The current passport issuance process is largely manual, leading to inefficiencies and delays.
-2. The system must allow applicants to register and submit details online.
-3. The application should undergo automated verification before reaching authorities.
-4. Administrators should be able to validate and approve details with the support of police verification.
-5. Upon successful verification, the system should issue the passport and update records.
+This project focuses on modeling the structure and flow of the system using **UML diagrams** created in **ArgoUML**.
 
 ---
 
-## 👥 Actors Involved
+## ⚙️ How It Works
 
-- Applicant
-- Passport Administrator
-- Regional Administrator (Ministry of External Affairs)
-- Police
-- System Database
+The project consists of multiple interacting components that represent real-world entities involved in passport issuance:
 
----
-
-## 🛠 UML Diagrams
-
-### 1. **Use Case Diagram**
-Outlines system interactions between the applicant, authorities, and database. Key use cases include login, submitting details, verifying information, and issuing the passport.
-
-### 2. **Class Diagram**
-Represents the structure of system classes such as `Applicant`, `PassportAdministrator`, `Police`, `RegionalAdministrator`, and `Database`, with their attributes and operations.
-
-### 3. **Sequence Diagram**
-Depicts the step-by-step interaction flow, from applicant login to final passport issuance, including verification processes by multiple actors.
-
-### 4. **Activity Diagram**
-Visualizes the workflow of the system, including login, submission, verification, decision-making (issue or penalty), and final delivery.
-
-### 5. **Statechart Diagram**
-Illustrates the different states of a passport application: login, submission, verification, and issuance.
-
-### 6. **Package Diagram**
-Describes the modular structure of the system—UI, Applicant, Administration, Police, and Database—grouped into logical packages for maintainability.
+1. **Applicant** logs in and submits personal details.
+2. **System** stores the data and initiates the first round of verification.
+3. **Passport Administrator** verifies and forwards details.
+4. **Police** performs background verification and sends a report.
+5. **Regional Administrator** does the final validation.
+6. If all validations pass, the passport is approved and issued.
 
 ---
 
-## 🧾 Modules Summary
+## 🛠 Tools & Technologies Used
 
-### 🔹 Applicant
-- Registers and submits application details
-- Checks status of application
-
-### 🔹 Passport Administrator
-- Logs in and verifies applicant data
-- Forwards data for further validation
-
-### 🔹 Regional Administrator
-- Confirms application authenticity
-- Makes the final decision to issue or reject
-
-### 🔹 Police
-- Performs background verification
-- Sends report back to administrators
-
-### 🔹 Database
-- Stores all application and verification data securely
+| Tool/Technology | Purpose                     |
+|------------------|------------------------------|
+| ArgoUML          | UML diagram design           |
+| Java/XML (optional) | Implementation simulation    |
+| GitHub           | Version control & documentation |
+| VS Code / Markdown | README editing                |
 
 ---
 
-## 🧰 Tools Used
+## 🧩 UML Diagrams
 
-- **ArgoUML** – for designing UML diagrams
-- **Java/XML** *(optional)* – for implementation (if extended)
-- **Any database** *(optional)* – for backend data simulation
+### 1. Use Case Diagram
+
+Shows the interaction between actors and system processes.
+
+![Use Case Diagram](diagrams/use-case.png)
+
+### 2. Class Diagram
+
+Displays the structure of classes like Applicant, Admin, Police, etc., along with their attributes and operations.
+
+![Class Diagram](diagrams/class-diagram.png)
+
+> You can add more diagrams like Sequence, Activity, or Statechart in the `diagrams/` folder.
 
 ---
 
-## 📂 File Structure (Sample)
+## 📤 Final Output (Result)
+
+- 📌 Applicant successfully submits application online.
+- 📌 All entities (Admin, Police, Regional Office) verify and update application status.
+- ✅ Once verified, the passport is issued and the applicant is notified.
+- 📁 All application and verification data is securely stored in the system database.
+
+---
+
+## 📁 Project Structure
 
